@@ -102,7 +102,7 @@ nav.navbar {
 
 .pseudo-white {
     padding-top: 96px;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 1);
 }
 
 .pseudo-black {
@@ -115,18 +115,26 @@ nav.navbar {
 }
 
 .container .jumbotron {
+    border: 2px;
     border-radius: 20px;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(200, 200, 200, 1));
+    border-color: rgba(200, 200, 200, 1);
+}
+
+.jumbotron {
+    z-index: 1000;
 }
 
 .invert {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
+    -webkit-filter: invert(50%);
+    filter: invert(50%);
 }
 
 .child-bottom {
-    margin-bottom: -40px;
+    margin-bottom: 16px;
     /*padding-top: 32px;*/
     padding-bottom: 8px;
+    z-index: 1000;
 }
 
 .gradient {
