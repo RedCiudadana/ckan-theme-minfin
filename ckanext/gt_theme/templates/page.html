@@ -6,16 +6,10 @@
     <div class="hide"><a href="#content">{{ _('Skip to content') }}</a></div>
   {% endblock %}
 
-  {#
-  Override the header on a page by page basis by extending this block. If
-  making sitewide header changes it is preferable to override the header.html
-  file.
-  #}
   {%- block header %}
     {% include "header.html" %}
   {% endblock -%}
 
-  {# The content block allows you to replace the content of the page if needed #}
   {%- block content %}
     {% block maintag %}<div role="main">{% endblock %}
       <div id="content" class="container">
@@ -33,7 +27,7 @@
           {% endblock %}
 
           {% block toolbar %}
-            <div class="toolbar">
+            <div>
               {% block breadcrumb %}
                 {% if self.breadcrumb_content() | trim %}
                   <ol class="breadcrumb">
@@ -118,15 +112,11 @@
     </div>
   {% endblock -%}
 
-  {#
-  Override the footer on a page by page basis by extending this block. If
-  making sitewide header changes it is preferable to override the footer.html-u
-  file.
-  #}
   {%- block footer %}
     {% include "footer.html" %}
   {% endblock -%}
 {%- endblock -%}
+
 
 {%- block scripts %}
     {% resource 'base/main' %}

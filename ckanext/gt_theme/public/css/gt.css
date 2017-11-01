@@ -1,12 +1,32 @@
-.navbar-static-top .container {
+body {
+    background: white;
     width: 100%;
-    overflow: hidden;
+    height: 100%;
 }
 
-.inline {
-    display: inline;
+
+/**************************************************
+top navbar
+**************************************************/
+
+nav.navbar {
+    background: #124364 url("../../../base/images/bg.png");
+    margin-bottom: 0px;
+    border-radius: 0px;
 }
 
+.navbar-inverse {
+    background: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #dfdfdf;
+}
+
+
+/**************************************************
+Logos
+**************************************************/
 .scalated img {
     width: 70%;
     max-width: auto;
@@ -18,7 +38,7 @@
 }
 
 .header-image img {
-    padding: 15px;
+    padding: 8px;
 }
 
 .header-image .small img {
@@ -29,159 +49,151 @@
     max-width: 45%;
 }
 
-body {
-    background: url('/img/background.png');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    background-position:50% -400px;
-}
 
-.container-space {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 20px;
-}
-
-.white-bg {
-     background: rgba(255, 255, 255, 0.3);
-}
-
-.masthead {
-    background: transparent;
-}
-
-.masthead .nav>li>a {
-    color: #777777;
-}
-
-[role="main"] {
-    background: transparent ;
-}
-
-
-.low-bar {
-    /* background: linear-gradient(rgba(64, 96, 90, 0.6), #406076); */
-    /*background: rgba(0,0,0,0.1);
-    min-height: 100px;*/
-}
-
-.padding-big {
-    padding: 25px 25%;
-}
+/**************************************************
+showcase - icons & text
+**************************************************/
 
 .showcase {
     text-align: center;
 }
+
 .showcase p {
-    color: #0f4166;
+    color: #124364;
     text-align: center;
     margin-top: 6px;
     font-size: 16px;
 }
 
 .showcase img {
-    /*max-width: 60px;*/
     max-height: 84px;
 }
 
-.simple-input {
-    margin: auto;
-}
 
-nav.navbar {
-    background: #003647 url("../../../base/images/bg.png");
-    margin-bottom: 0px;
-}
+/**************************************************
+section with background
+**************************************************/
 
-.navbar-inverse {
-    background: transparent;
-}
-
-.pseudo-white {
-    padding-top: 96px;
-    background: rgba(255, 255, 255, 1);
+.img-background {
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url('/img/background.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .pseudo-black {
-    padding-top: 20px;
     background: rgba(0, 0, 0, 0.6);
 }
 
-.white {
+.text-white {
     color: white;
 }
 
-.container .jumbotron {
+.right-vertical-divisor {
+    border-right: 2px solid gray;
+    height: 100%;
+}
+
+.left-vertical-divisor {
+    border-left: 2px solid gray;
+    height: 100%;
+}
+
+.gradient-container .jumbotron {
     border: 2px;
     border-radius: 20px;
     background: linear-gradient(rgba(255, 255, 255, 1), rgba(200, 200, 200, 1));
     border-color: rgba(200, 200, 200, 1);
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
-.jumbotron {
-    z-index: 1000;
-}
-
-.invert {
+.png-white-to-gray {
     -webkit-filter: invert(50%);
     filter: invert(50%);
 }
 
-.child-bottom {
-    margin-bottom: 16px;
-    /*padding-top: 32px;*/
-    padding-bottom: 8px;
-    z-index: 1000;
+
+.polygon {
+    border-top: 32px solid white;
+    border-right: 32px solid transparent;
+    height: 0;
+    width: 56%;
+}
+
+
+/**************************************************
+div with gradient
+**************************************************/
+
+.solid-white .jumbotron{
+    height: 100%;
+    background: white;
+    color: white;
+    border-radius: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 0px;
 }
 
 .gradient {
     /*background: linear-gradient(red, yellow);*/
     padding-top: 24px;
     margin-bottom: 24px;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(200, 200, 200, 0.3));
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(200, 200, 200, 1));
     height: 100%;
 }
 
-.gradient p{
-    color: #0f4166;
-}
+/**************************************************
+div with blue
+**************************************************/
 
-.solid-blue {
-    margin-bottom: 16px;
+.solid-blue .jumbotron {
     height: 100%;
-}
-
-.solid-blue div {
-    padding-bottom: 16px;
-    padding-top: 16px;
-    height: 100%;
-    vertical-align: center;
+    background: #124364 url("../../../base/images/bg.png");
+    color: white;
+    border-radius: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .solid-blue p {
-    background: #0f4166;
-    color: white;
-    padding: 48px;
+    padding: 12px;
+    padding-bottom: 24px;
+    padding-top: 24px;
     text-align: center;
     font-size: 24px;
+    margin-bottom: 0px;
 }
+
+/**************************************************
+Footer section
+**************************************************/
 
 .footer {
-  padding: 12px;
-  width: 100%;
-  background-color: #84909a;
+    margin-top: 12px;
+    padding: 12px;
+    width: 100%;
+    background: #dbdbdb url("../../../base/images/bg.png");
+
 }
 
-.footer li, a {
-    color: #0f4166;
+.footer li, a, a:hover {
+    color: #356e99;
     font-weight: bold;
 }
 
 .footer .list-unstyled {
     margin: 0;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 12px;
 }
