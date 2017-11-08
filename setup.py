@@ -17,21 +17,15 @@ setup(
     # http://packaging.python.org/en/latest/tutorial.html#version
     version='0.0.1',
 
-    description='''
-    Minfin theme extension for CKAN
-    ''',
+    description='''Minfin theme extension for CKAN''',
     long_description=long_description,
 
     # The project's main homepage.
     url='https://github.com//ckanext-gt_theme',
 
     # Author details
-    author='''
-    Javier Pérez, Donald Velásquez
-    ''',
-    author_email='''
-    javier.alejandro92@gmail.com, davelagui@gmail.com, info@redciudadana.org
-    ''',
+    author='''Javier Pérez, Donald Velásquez''',
+    author_email='''javier.alejandro92@gmail.com, davelagui@gmail.com, info@redciudadana.org''',
 
     # Choose your license
     license='AGPL',
