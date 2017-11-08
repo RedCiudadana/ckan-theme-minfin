@@ -17,15 +17,21 @@ setup(
     # http://packaging.python.org/en/latest/tutorial.html#version
     version='0.0.1',
 
-    description='''''',
+    description='''
+    Minfin theme extension for CKAN
+    ''',
     long_description=long_description,
 
     # The project's main homepage.
     url='https://github.com//ckanext-gt_theme',
 
     # Author details
-    author='''''',
-    author_email='''''',
+    author='''
+    Javier Pérez, Donald Velásquez
+    ''',
+    author_email='''
+    javier.alejandro92@gmail.com, davelagui@gmail.com, info@redciudadana.org
+    ''',
 
     # Choose your license
     license='AGPL',
@@ -48,7 +54,7 @@ setup(
 
 
     # What does your project relate to?
-    keywords='''CKAN''',
+    keywords='''CKAN, Guatemala, Finanzas, Gobierno''',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
