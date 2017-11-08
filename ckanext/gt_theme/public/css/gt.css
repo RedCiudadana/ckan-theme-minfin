@@ -4,6 +4,10 @@ body {
     height: 100%;
 }
 
+a, a:hover {
+    color: #124364;
+}
+
 
 /**************************************************
 top navbar
@@ -41,10 +45,7 @@ Logos
     padding: 8px;
 }
 
-.header-image .small img {
-    max-width: 45%;
-}
-
+.header-image .small img, 
 .red img {
     max-width: 45%;
 }
@@ -167,6 +168,11 @@ div with blue
     padding-right: 12px;
 }
 
+.solid-blue a,
+.solid-blue a:hover {
+    color: white;
+}
+
 .solid-blue p {
     padding: 12px;
     padding-bottom: 24px;
@@ -196,4 +202,63 @@ Footer section
 .footer .list-unstyled {
     margin: 0;
     padding: 12px;
+}
+
+
+@media (max-width: 991px) {
+    .img-background {
+        background: white;
+    }
+
+    .pseudo-black {
+        background: white;
+    }
+
+    .right-vertical-divisor {
+        border-right: 0px;
+    }
+
+    .left-vertical-divisor {
+        border-left: 0px;
+    }
+    .solid-blue p {
+        padding-bottom: 48px;
+        padding-top: 48px;
+        font-size: 36px;
+    }
+
+    .showcase p {
+        margin-bottom: 48px;
+        font-size: 24px;
+    }
+
+    .text-white {
+        color: #124364;
+    }
+
+    .gradient {
+        background: #dbdbdb url("../../../base/images/bg.png");
+    }
+
+    .gradient-container .jumbotron {
+        background: #dbdbdb url("../../../base/images/bg.png");
+        padding-top: 64px;
+    }
+    
+    .list-unstyled .text-right {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .scalated img {
+        width: 100%;
+        max-width: auto;
+        height: auto;
+    }
+
+    .header-image .small img,
+    .red img {
+        max-width: 30%;
+    }
 }

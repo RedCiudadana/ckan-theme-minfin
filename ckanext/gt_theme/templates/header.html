@@ -88,16 +88,16 @@
     <div class="debug">Controller : {{ c.controller }}<br/>Action : {{ c.action }}</div>
     {% endif %}
     {% endblock %}
-    <div class="col-md-8">
+    <div class="col-sm-8">
       <hgroup class="{{ g.header_class }}">
         {% block header_logo %}
         <a class="logo scalated" href="{{ h.url_for('home') }}"><img src="/img/minfin.png" alt="datosabiertos-logo" title="Ir a inicio" /></a>
         {% endblock %}    
       </hgroup>
     </div>
-    <div class="col-md-4">
+    <div class="col-sm-4">
       <hgroup class="{{ g.header_class }}">
-        <a class="logo red" href="{{ h.url_for('home') }}"><img src="/img/red.png" alt="redciudadana-logo" /></a>
+        <a class="logo red" href="{{ h.url_for('home') }}"><img src="/img/red.jpg" alt="redciudadana-logo" /></a>
       </hgroup>
 
       <hgroup class="{{ g.header_class }}">
@@ -120,16 +120,9 @@
             {% block header_site_search %}
             <form class="form-inline pull-right" action="{% url_for controller='package', action='search' %}" method="get">
               <div class="form-group form-group-lg">
-                {#
-                <label for="field-sitewide-search">
-                  {% block header_site_search_label %}
-                  {{ _('Search Datasets') }}
-                  {% endblock %}
-                </label>
-                #}
                 <div class="input-group">
                   <input class="form-control col-md-8" id="field-sitewide-search"
-                  type="text" name="q" placeholder="{{ _('Search Datasets') }}" />
+                  type="text" name="q" placeholder="Buscar datos" />
                   <span class="input-group-btn">
                     <button class="btn btn-lg btn-default" type="submit"><i class="fa fa-search"></i></button>
                   </span>
@@ -145,20 +138,26 @@
           <div class="container-fluid">
             <div class="col-md-4 right-vertical-divisor">
               <div class="showcase">
-                <img src="/img/gauge.png"/>
-                <p>Consulta y analiza datos abiertos</p>
+                <a href="/dataset">
+                  <img src="/img/gauge.png"/>
+                  <p>Consulta y analiza datos abiertos</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
               <div class="showcase">
-                <img src="/img/person.png"/>
-                <p>Visualizaciones</p>
+                <a href="#">
+                  <img src="/img/person.png"/>
+                  <p>Visualizaciones</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4 left-vertical-divisor">
               <div class="showcase">
-                <img src="/img/network.png"/>
-                <p>Consulta y analiza datos abiertos</p>
+                <a href="#">
+                  <img src="/img/network.png"/>
+                  <p>Consulta y analiza datos abiertos</p>
+                </a>
               </div>
             </div>
           </div>  
@@ -170,4 +169,3 @@
 </div>
 
 {% endblock %}
-

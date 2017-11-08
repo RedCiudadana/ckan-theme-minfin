@@ -1,6 +1,8 @@
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 
+ckan.locale_default=es
+
 
 class Gt_ThemePlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
