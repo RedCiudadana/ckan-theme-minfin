@@ -204,6 +204,15 @@ Footer section
     padding: 12px;
 }
 
+div[role=main] {
+    background: white;
+}
+
+@media (min-width: 1200px) {
+    div[role=main] .container {
+        width: 970px;
+    }
+}
 
 @media (max-width: 991px) {
     .img-background {
@@ -262,3 +271,4 @@ Footer section
         max-width: 30%;
     }
 }
+
