@@ -119,10 +119,10 @@ section with background
     padding-right: 12px;
 }
 
-.png-white-to-gray {
+/*.png-white-to-gray {
     -webkit-filter: invert(50%);
     filter: invert(50%);
-}
+}*/
 
 
 .polygon {
